@@ -246,7 +246,6 @@ img {
 	background-color: var(--clr-green-light);
 	border-radius: 5px;
 	margin-right: 5px;
-
 }
 
 .plano__btn-comprar {
@@ -261,7 +260,7 @@ img {
 	text-align: center;
 }
 
-.plano:last-child {
+.plano:second {
 	background-color: var(--clr-green-light);
 }
 
@@ -288,6 +287,70 @@ img {
 /**********************************/
 /* 7. Vantagens
 /**********************************/
+
+.vantagens-section {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.vantagens-container {
+	max-width: 960px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.vantagem {
+	width: 290px;
+	margin: 0 auto;
+}
+
+.vantagem__titulo {
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-align: start;
+	margin: 10px auto;
+}
+
+.vantagem__titulo::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 1.5rem;
+	background-color: var(--clr-green-dark);
+	margin-right: 5px;
+	margin-left: 10px;
+}
+
+.vantagem:nth-child(1) .vantagem__titulo::before,
+.vantagem:nth-child(4) .vantagem__titulo::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 1.5rem;
+	background-color: var(--clr-green-light);
+	margin-right: 5px;
+	margin-left: 10px;
+}
+
+.vantagem:nth-child(2) .vantagem__titulo::before,
+.vantagem:nth-child(5) .vantagem__titulo::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 1.5rem;
+	background-color: var(--clr-pink-dark);
+	margin-right: 5px;
+	margin-left: 10px;
+}
+
+.vantagem__descricao {
+	text-align: start;
+	margin: 10px auto;
+	font-family: var(--ff-primary);
+	font-size: 1rem;
+}
 
 /**********************************/
 /* 8. Newsletter
