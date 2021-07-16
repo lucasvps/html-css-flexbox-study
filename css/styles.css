@@ -35,6 +35,10 @@
 /* 1. Estilos gerais
 /**********************************/
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--clr-white);
 	font-family: var(--ff-primary);
@@ -356,6 +360,88 @@ img {
 /* 8. Newsletter
 /**********************************/
 
+.newsletter {
+	background-color: var(--clr-green-light);
+}
+
+.newsletter-container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.newsletter-texts {
+	flex: 1 1 260px;
+	padding-left: 10px;
+}
+
+
+.newsletter-texts__title {
+	font-weight: bold;
+	font-size: 2.62rem;
+}
+
+.newsletter-texts__subtitle {
+	font-style: italic;
+}
+
+.newsletter-form__input {
+	flex: 3 1 203px;
+	font-size: 1.25rem;
+	width: 325px;
+	color: black;
+	font-style: italic;
+	font-family: var(--ff-primary);
+	border: 10px solid var(--clr-pink-dark);
+	padding: 10px;
+	margin: 0;
+	border-radius: 0px;
+}
+
+.newsletter-form__submit {
+	flex: 1 1 203px;
+	width: 192px;
+	font-family: var(--ff-primary);
+	font-size: 2.25rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: var(--clr-pink-dark);
+	color: black;
+	cursor: pointer;
+	border: 0;
+	padding: 15px;
+}
+
+.newsletter-form {
+	/* flex: 2 1 260px; */
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
 /**********************************/
 /* 9. Footer
 /**********************************/
+
+
+.footer {
+	background-color: var(--clr-pink-light);
+}
+
+.footer-container {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+.footer-container__info {
+	font-style: var(--ff-primary);
+}
